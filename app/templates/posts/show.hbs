@@ -8,8 +8,7 @@
   {{model.description}}
 </p>
 
-{{#link-to 'BACK' 'posts.index'}}
-<p>
-  Back
-</p>
-{{/link-to}}
+<button {{action 'deletePost' model}}>Delete</button>
+
+
+{{link-to 'BACK' 'posts.index'}}
