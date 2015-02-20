@@ -1,8 +1,4 @@
 <h1>new post</h1>
 
-{{input value=model.title placeholder='title'}}
-{{input value=model.username placeholder='username'}}
-{{input value=model.link placeholder='link'}}
-{{textarea value=model.description placeholder='description'}}
 
-<button {{action "save" model}}>Submit</button>
+{{partial 'posts/form'}}
