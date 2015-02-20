@@ -1,0 +1,11 @@
+<h2>
+  <a {{bind-attr href='model.link'}}>{{model.title}}</a>
+</h2>
+
+<h5>Submitted by {{model.username}}</h5>
+
+<p>
+  {{model.description}}
+</p>
+
+{{#link-to 'BACK' 'posts.index'}}

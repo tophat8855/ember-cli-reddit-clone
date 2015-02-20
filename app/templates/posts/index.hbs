@@ -1,0 +1,9 @@
+<h2>post index </h2>
+
+{{#each post in model}}
+  {{#link-to "posts.show" post}}
+  Title: {{post.title}}
+  {{/link-to}}
+{{/each}}
+
+{{link-to "submit post" 'posts.new'}}
