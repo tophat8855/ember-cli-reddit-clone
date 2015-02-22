@@ -13,3 +13,11 @@
 {{link-to 'edit' 'posts.edit' model}}
 
 {{link-to 'BACK' 'posts.index'}}
+
+<h3>Comments:</h3>
+
+{{#each comment in model.comments}}
+  <li>
+    <strong>{{comment.username}}</strong> - {{comment.body}}
+  </li>
+{{/each}}
