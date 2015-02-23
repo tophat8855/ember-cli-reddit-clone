@@ -1,0 +1,6 @@
+<h3>new comment form</h3>
+
+{{input value=model.username placeholder="username"}}
+{{textarea value=model.body placeholder="comment"}}
+
+<button {{action 'createComment' model}}>Submit</button>

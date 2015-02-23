@@ -14,10 +14,11 @@
 
 {{link-to 'BACK' 'posts.index'}}
 
+<p>
+  {{link-to "Add a comment" 'comments.new'}}
+  {{link-to "View comments" 'comments.index'}}
+</p>
+
 <h3>Comments:</h3>
 
-{{#each comment in model.comments}}
-  <li>
-    <strong>{{comment.username}}</strong> - {{comment.body}}
-  </li>
-{{/each}}
+{{outlet}}
