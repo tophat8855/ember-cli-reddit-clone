@@ -2,6 +2,6 @@
 
 {{#each comment in model.comments}}
 <li>
-  <strong> {{comment.username}}</strong> - {{comment.body}}
+  <strong> {{comment.username}}</strong> - {{comment.body}} <button {{action "deleteComment" comment}}>X</button>
 </li>
 {{/each}}
